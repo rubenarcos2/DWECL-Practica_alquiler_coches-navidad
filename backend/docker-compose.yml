@@ -1,0 +1,19 @@
+version: "3.3"
+ 
+services:
+  alquiler_coches-mysql:
+    image: mysql:5.7
+    environment:
+      - MYSQL_DATABASE=alquiler_coches
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_USER=ruben
+      - MYSQL_PASSWORD=dawRuben
+    command: --init-file /docker-entrypoint-initdb.d/initDB.sql
+    volumes:
+      # Montamos un volumen para MySQL para no perder los datos de bd
+      - ./docker/db:/var/lib/mysql
+      - ./docker/scripts/initDB.sql:/docker-entrypoint-initdb.d/initDB.sql
+    expose:
+      - 3306
+    ports:
+      - 3306:3306

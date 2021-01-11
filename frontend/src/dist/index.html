@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html  lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>DWECL - EXAMEN 1 TRIM - Rubén Arcos Ortega</title>
+    <link rel="stylesheet" type="text/css" href="assets/style/style.css" title="style">    
+    <script defer src="constants.js"></script>
+    <script defer src="models/country.model.js"></script>
+    <script defer src="models/conflict.model.js"></script>
+    <script defer src="views/war.view.js"></script>
+    <script defer src="services/war.service.js"></script>
+    <script defer src="controllers/war.controller.js"></script>
+    <script defer src="app.js"></script>
+</head>
+
+<body>
+<header>
+</header>
+
+<nav>
+</nav>
+
+<aside>
+    
+    <section id="all_conflicts">
+
+    </section>
+    
+    
+</aside>
+	
+<main>	
+	<section>
+        <div id="frame_conflict">
+            <input type="text" name="uuid_conflict" id="uuid_conflict">
+            <input type="text" name="name_conflict" id="name_conflict">
+            <select name="select_countries_conflict_1" id="select_countries_conflict_1" required>                
+                <option value='undefined'></option>
+                <option value='España'>España</option>
+                <option value='Francia'>Francia</option>
+                <option value='Portugal'>Portugal</option>
+                <option value='EEUU'>EEUU</option>
+                <option value='Alemania'>Alemania</option>
+                <option value='Australia'>Australia</option>
+                <option value='UK'>UK</option>
+                <option value='Polonia'>Polonia</option>
+                <option value='Suiza'>Suiza</option>
+            </select>
+            <select name="select_countries_conflict_2" id="select_countries_conflict_2" required>                
+                <option value='undefined'></option>
+                <option value='España'>España</option>
+                <option value='Francia'>Francia</option>
+                <option value='Portugal'>Portugal</option>
+                <option value='EEUU'>EEUU</option>
+                <option value='Alemania'>Alemania</option>
+                <option value='Australia'>Australia</option>
+                <option value='UK'>UK</option>
+                <option value='Polonia'>Polonia</option>
+                <option value='Suiza'>Suiza</option>
+            </select>
+            <select name="select_countries_conflict_3" id="select_countries_conflict_3">
+                <option value='undefined'></option>             
+                <option value='España'>España</option>
+                <option value='Francia'>Francia</option>
+                <option value='Portugal'>Portugal</option>
+                <option value='EEUU'>EEUU</option>
+                <option value='Alemania'>Alemania</option>
+                <option value='Australia'>Australia</option>
+                <option value='UK'>UK</option>
+                <option value='Polonia'>Polonia</option>
+                <option value='Suiza'>Suiza</option>
+            </select>
+            <select name="select_countries_conflict_4" id="select_countries_conflict_4">
+                <option value='undefined'></option>          
+                <option value='España'>España</option>
+                <option value='Francia'>Francia</option>
+                <option value='Portugal'>Portugal</option>
+                <option value='EEUU'>EEUU</option>
+                <option value='Alemania'>Alemania</option>
+                <option value='Australia'>Australia</option>
+                <option value='UK'>UK</option>
+                <option value='Polonia'>Polonia</option>
+                <option value='Suiza'>Suiza</option>
+            </select>
+            <select name="select_countries_conflict_5" id="select_countries_conflict_5">
+                <option value='undefined'></option>            
+                <option value='España'>España</option>
+                <option value='Francia'>Francia</option>
+                <option value='Portugal'>Portugal</option>
+                <option value='EEUU'>EEUU</option>
+                <option value='Alemania'>Alemania</option>
+                <option value='Australia'>Australia</option>
+                <option value='UK'>UK</option>
+                <option value='Polonia'>Polonia</option>
+                <option value='Suiza'>Suiza</option>
+            </select>
+            <input type="date" name="start_date_conflict" id="start_date_conflict">
+            <input type="date" name="end_date_conflict" id="end_date_conflict">
+            <input type="number" name="death_conflict" id="death_conflict">
+            <input type="number" name="injuries_conflict" id="injuries_conflict">
+            <select name="select_types_conflict" id="select_types_conflict"></select>
+        </div>
+    </section>
+</main>
+	
+<footer>
+    <span class="copyright">
+			© Copyright Rubén Arcos</a>
+    </span>
+</footer>
+</body>
+</html>
